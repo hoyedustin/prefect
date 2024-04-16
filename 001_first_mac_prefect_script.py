@@ -1,6 +1,9 @@
 import pandas as pd
 from prefect import flow, task
 from sqlalchemy import create_engine
+from prefect_github.repository import GitHubRepository
+
+github_repository_block = GitHubRepository.load("dustinsgithubrepoblock")
 
 
 
